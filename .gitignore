@@ -1,0 +1,51 @@
+# ------------------------------------
+# Базовый .gitignore для Node.js/JS
+# ------------------------------------
+
+# Зависимости
+/node_modules
+/jspm_packages
+
+# Менеджеры пакетов (Lock-файлы)
+# Если вы используете Yarn, npm, или pnpm, оставьте только нужные:
+package-lock.json
+npm-debug.log
+yarn-error.log
+.pnpm-debug.log*
+
+# Сборка и временные папки
+/dist
+/build
+/out
+/temp
+
+# Файлы, генерируемые инструментами
+# TypeScript
+/*.tsbuildinfo
+
+# IDE (Integrated Development Environment) / Редакторы
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history
+
+# JetBrains IDEs (WebStorm, IntelliJ)
+.idea
+*.iml
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# ------------------------------------
+# Дополнительно для практики кодинга
+# ------------------------------------
+
+# Файлы с тестовыми данными или выводами
+# Если вы используете файлы для временных тестов
+/output
+/data.json
+/temp.*
