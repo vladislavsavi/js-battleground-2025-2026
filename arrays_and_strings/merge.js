@@ -1,4 +1,4 @@
-
+// Эта функция merge выполняет слияние (merging) двух предварительно отсортированных массивов 
 
 function merge(arr1, arr2) {
     let arr1_index = 0;
