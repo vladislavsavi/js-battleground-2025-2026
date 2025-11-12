@@ -4,7 +4,7 @@
 // Если таких индексов несколько, вернуть минимальный.
 
 
-function pivotIndex(arr) {
+function pivotIndex(arr)  {
     const totalSum = arr.reduce((acc, num) => acc + num, 0);
 
     let leftSumm = 0
