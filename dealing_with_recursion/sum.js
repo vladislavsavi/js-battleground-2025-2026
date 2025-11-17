@@ -12,6 +12,8 @@ function sum(arr) {
 }
 
 
+
+// by https://github.com/GulievAnar31
 function sum_1(arr, i) {
     if(i === arr.length - 1) {
         return arr[i];
@@ -20,6 +22,7 @@ function sum_1(arr, i) {
     return arr[i] + sum_1(arr, i + 1);
 }
 
+// by https://github.com/GulievAnar31
 function sum_2(arr) {
     const helper = (i) => {
         if(i === arr.length - 1) {
