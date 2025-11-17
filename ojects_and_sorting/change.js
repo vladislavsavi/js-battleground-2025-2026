@@ -10,11 +10,11 @@ const coinChange = (coins, amount) => {
     const dp = new Array(amount + 1).fill(Infinity);
     dp[0] = 0;
 
-    for (let coin of coins) {
+    coins.forEach(coin => {
         for (let x = coin; x <= amount; x++) {
             dp[x] = Math.min(dp[x], dp[x - coin] + 1);
         }
-    }
+    });
     
     const result = dp[amount];
     if (result === Infinity) {
