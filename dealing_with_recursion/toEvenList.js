@@ -9,7 +9,7 @@ function toEvenList(arr, i = 0) {
     if (arr[i] % 2 === 0) {
         return [arr[i], ...nextEvens];
     } else {
-        return [...nextEvens];
+        return nextEvens;
     }
 }
 
