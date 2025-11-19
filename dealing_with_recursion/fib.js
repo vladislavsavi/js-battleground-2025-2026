@@ -1,4 +1,5 @@
-
+// Efficient Fibonacci using memoization
+// Фибоначчи с мемоизацией
 
 function fib(n, memo = {}) {
     if (n === 0 || n === 1) {
