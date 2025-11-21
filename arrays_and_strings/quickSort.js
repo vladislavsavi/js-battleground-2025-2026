@@ -34,4 +34,23 @@ function quickSort(arr, low = 0, high = arr.length - 1) {
     }
     return arr;
 }
+
+function quickSelect(arr, k, low = 0, high = arr.length - 1) {
+    if (high  - low <= 0) {
+        return arr[low];
+    }
+
+    const pivot_index = partition(arr, low, high);
+
+    if (pivot_index === k) {
+        return arr[pivot_index];
+    } else if (pivot_index < k) {
+        return quickSelect(arr, k, pivot_index + 1, high);
+    } else {
+        return quickSelect(arr, k, low, pivot_index - 1);
+    }
+}
+
+console.log(quickSelect([3,6,8,10,1,2], 1));
+
 console.log(quickSort([3,6,8,10,1,2,1]));
